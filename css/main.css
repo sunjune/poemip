@@ -1,0 +1,730 @@
+body,div {
+    font-size: 12px;
+    font-family: "Consolas", "Arial";
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.docs {
+    margin: 0;
+    padding: 0;
+}
+
+.area_main {
+    width: 100%;
+    height: 100%;
+}
+/*banner 导航条*/
+.area_main .area_banner {
+    width: 100%;
+    min-height: 6em;
+    background-color: #a5b5ae;
+}
+.area_main .area_banner .div_logo{
+    float: left;
+    width: 16em;
+    overflow: hidden;
+    text-align: center;
+}
+.area_main .area_banner .div_logo .pic_logo{
+    width: 8em;
+    margin: 0.5em auto;
+}
+.area_main .area_banner .txt_title{
+    float: left;
+    margin-left: 0.8em;
+    font-size: 2.6em;
+    font-family: "微软雅黑";
+    line-height: 230%;
+    color: #ffffff;
+}
+
+/*主页面信息展示区域*/
+.area_main .area_body {
+    width: 100%;
+    border-top: 1px solid #cbd4d0;
+    min-height: 40em;
+    max-height: 100%;
+    position: absolute;
+    bottom: 3em;
+    background-color: #fafafa;
+    top: 6em;
+}
+/*主页面左侧导航*/
+.area_main .area_body .area_left {
+    position: absolute;
+    background-color: #a5b5ae;
+    border-right: 1px solid #cbd4d0;
+    min-width: 16em;
+    min-height: 40em;
+    bottom: 0;
+    top: 0;
+}
+/*主页面数据列表工作区*/
+.area_main .area_body .area_right {
+    position: absolute;
+    min-height: 40em;
+    min-width: 60em;
+    left: 16em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/*bottom信息区*/
+.area_main .area_bottom {
+    width: 100%;
+    position: absolute;
+    height: 3em;
+    background-color: #eaf3eb;
+    bottom: 0;
+    border-top: 1px solid #cbd4d0;
+}
+
+.nav_project {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/*------------------------------------------------------------*/
+/*主页面左侧导航 功能大项列表 Start*/
+/*------------------------------*/
+.nav_project ul li a {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: "微软雅黑";
+    color: #fff;
+    width: 11em;
+    padding: 0.6em 0;
+    margin: 0.6em auto;
+    background-color: #cbd4d0;
+    border: 1px solid #cbd4d0;
+    border-radius: 1.3em;
+    display: block;
+    cursor: pointer;
+}
+
+.nav_project ul li a:hover {
+    /*color: #b4bdb9;*/
+    background-color: #b0c080;
+}
+/*------------------------------*/
+/*主页面左侧导航 功能大项列表 End*/
+/*------------------------------------------------------------*/
+
+/*------------------------------------------------------------*/
+/*主页面数据列表工作区 数据视图 Start*/
+/*------------------------------*/
+.area_right .info_head {
+    background-color: #e8e8e8;
+    height: 4em;
+    color: #666;
+}
+
+.area_right .info_body {
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 4em;
+    bottom: 4em;
+    width: 100%;
+    border-bottom: 1px solid #c3c3c3;
+    border-top: 1px solid #c3c3c3;
+    overflow: scroll;
+}
+
+.area_right .info_foot {
+    background-color: #e8e8e8;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 4em;
+}
+
+.area_right .info_head .head_rtnhome{
+	float: left;
+}
+.area_right .info_head .head_rtnhome .btn_rtnhome{
+	width: 5em;
+	cursor: pointer;
+}
+.area_right .info_head .head_left {
+    float: left;
+    width: 32em;
+}
+
+.area_right .info_head .head_left a {
+    font-size: 1.1em;
+    font-weight: normal;
+    background-color: #b0c080;
+    border: 1px solid #b0c080;
+    color: #fff;
+    padding: 0.1em 0.5em;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.area_right .info_head .head_left a:hover {
+    background-color: #fff;
+    color: #b0c080;
+}
+
+.area_right .info_head .head_middle{
+    float: left;
+    padding-top: 0.4em;
+}
+
+.area_right .info_head .head_middle .searchbox{
+    font-size: 1.3em;
+    font-family: "微软雅黑";
+    width: 16em;
+    height: 2em;
+}
+
+.area_right .info_head .head_middle .widerbox{
+	width: 24em;
+}
+
+.area_right .info_head .head_middle .searchbtn{
+    font-size: 1.3em;
+    font-family: "微软雅黑";
+    width: 5em;
+    height: 2.3em;
+    margin-left: 0.5em;
+    color: #fff;
+    border: none;
+    border-radius: 0.4em;
+    background-color: #b0c080;
+	cursor: pointer;
+}
+
+.area_right .info_head .head_middle .statistics{
+    font-size: 1.3em;
+    font-family: "微软雅黑";
+    width: 5em;
+    height: 2.3em;
+    margin-left: 0.5em;
+    color: #fff;
+    border: none;
+    border-radius: 0.4em;
+    background-color: #b0c080;
+	cursor: pointer;
+}
+
+/*输入框占位符样式设置*/
+input::-webkit-input-placeholder {
+	color: #999;
+}
+input:-ms-input-placeholder { // IE10+
+	color: #999;
+}
+input:-moz-placeholder { // Firefox4-18
+	color: #999;
+}
+input::-moz-placeholder { // Firefox19+
+	color: #999;
+}
+
+.area_right .info_head .head_right {
+    float: right;
+    padding: 1.3em;
+}
+
+.area_right .info_head .head_right a {
+    font-size: 1.3em;
+    font-family: "微软雅黑";
+    background-color: #b0c080;
+    border: 1px solid #b0c080;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+.area_right .info_head .head_right a:hover {
+    background-color: #fff;
+    color: #b0c080;
+}
+
+.area_right .info_head .result_desc {
+    display: block;
+    padding: 0.4em;
+    font-weight: bold;
+}
+
+.area_right .info_head .result_count {
+    padding: 0 0.7em;
+}
+
+.area_right .info_body .contblock{
+    width: 52em;
+    margin: 6em auto;
+}
+
+.area_right .info_body .contblock ul li{
+    margin-bottom: 4em;
+}
+.area_right .info_body .contblock .searchbox{
+    font-size: 2em;
+    line-height: 200%;
+    font-family: "微软雅黑";
+    width: 20em;
+}
+
+.area_right .info_body .contblock .searchbtn{
+    font-size: 2em;
+    padding: 0.4em 1.35em;
+    font-family: "微软雅黑";
+    background-color: #cbd4d0;
+    border: none;
+    margin-left: 0.5em;
+    border-radius: 0.3em;
+}
+
+.area_right .info_body .contblock .statistics{
+    font-size: 2em;
+    font-family: "微软雅黑";
+    padding: 0.5em 7em;
+    background-color: #a5b5ae;
+    color: #fff;
+    border: none;
+}
+
+/*数据块列表 开始*/
+.area_right .info_body .info_block {
+    float: left;
+    margin: 1em;
+    width: 24em;
+}
+
+.area_right .info_body .info_block .info_title {
+
+}
+
+.area_right .info_body .info_block .info_title a{
+    display: block;
+    font-family: "微软雅黑";
+    font-size: 2em;
+    padding: 1em;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #b0c080;
+    color: #fff;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.area_right .info_body .info_block .info_title a{
+    cursor: pointer;
+}
+
+.area_right .info_body .info_block .info_title a:hover {
+    background-color: #fff;
+    color: #b0c080;
+}
+
+.area_right .info_body .info_block .info_title p{
+    display: block;
+    font-family: "微软雅黑";
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #b0c080;
+    color: #fff;
+    border-radius: 0.5em 0.5em 0 0;
+    margin: 0;
+}
+.area_right .info_body .info_block .info_title p .issue_id{
+    background-color: #fff;
+    color: #b0c080;
+    font-size: 0.8em;
+    padding: 0.1em 0.5em;
+    margin: 0 0.3em 0 0;
+    border-radius: 1em;
+}
+
+.area_right .info_body .info_block .option_nav {
+    background-color: #b0c080;
+    text-align: right;
+}
+
+.area_right .info_body .info_block .option_nav .img_icon{
+    float: left;
+    padding: 0.4em 1em;
+}
+
+.area_right .info_body .info_block .option_nav .nofloat {
+    float: none;
+    text-align: left;
+    border-top: 1px solid #fafafa;
+}
+
+.area_right .info_body .info_block .option_nav .img_icon img {
+    width: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.area_right .info_body .info_block .option_nav a {
+    display: inline-table;
+    color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.area_right .info_body .info_block .option_nav a:hover {
+    background-color: #fff;
+    color: #b0c080;
+}
+
+.area_right .info_body .info_block .option_nav ul {
+    padding: 1em;
+}
+
+.area_right .info_body .info_block .option_nav ul li {
+    display: table;
+    line-height: 200%;
+}
+
+.area_right .info_body .info_block .option_nav .col_left {
+    float: left;
+    width: 5em;
+    color: #ecf9c7;
+}
+
+.area_right .info_body .info_block .option_nav .col_tag {
+    color: #ecf9c7;
+}
+
+.area_right .info_body .info_block .option_nav .col_user {
+    float: left;
+    width: 6em;
+    text-align: left;
+    color: #59672f;
+}
+
+.area_right .info_body .info_block .option_nav .col_body {
+    float: left;
+    max-width: 22em;
+    text-align: left;
+    color: #59672f;
+}
+
+.area_right .info_body .info_block .option_nav .col_date{
+    float: left;
+    color: #59672f;
+    width: 6em;
+    text-align: left;
+}
+
+.area_right .info_body .info_block .option_nav .col_right {
+    float: left;
+    color: #59672f;
+}
+
+.area_right .info_body .info_block .option_nav .nolinks {
+    display: inline-table;
+    color: #fff;
+    padding: 0.5em;
+}
+
+.area_right .info_body .info_block .option_nav .info_num {
+    background-color: #fff;
+    color: #919e6a;
+    border: 1px solid #b0c080;
+    padding: 0.1em 0.5em;
+    border-radius: 0.8em;
+}
+/*数据块列表 结束*/
+
+/*数据行列表 开始*/
+.area_right .info_body .info_row {
+    float: left;
+    margin: 1em;
+    width: 24em;
+}
+
+.area_right .info_body .info_row .info_title {
+
+}
+
+.area_right .info_body .info_row .info_title a{
+    display: block;
+    font-family: "微软雅黑";
+    font-size: 2em;
+    padding: 1em;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #b0c080;
+    color: #fff;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.area_right .info_body .info_row .info_title a{
+    cursor: pointer;
+}
+
+.area_right .info_body .info_row .info_title a:hover {
+    background-color: #fff;
+    color: #b0c080;
+}
+
+.area_right .info_body .info_row .info_title p{
+    display: block;
+    font-family: "微软雅黑";
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #b0c080;
+    color: #fff;
+    border-radius: 0.5em 0.5em 0 0;
+    margin: 0;
+}
+.area_right .info_body .info_row .info_title p .issue_id{
+    background-color: #fff;
+    color: #b0c080;
+    font-size: 0.8em;
+    padding: 0.1em 0.5em;
+    margin: 0 0.3em 0 0;
+    border-radius: 1em;
+}
+
+.area_right .info_body .info_row .option_nav {
+    background-color: #b0c080;
+    text-align: right;
+}
+
+.area_right .info_body .info_row .option_nav .img_icon{
+    float: left;
+    padding: 0.4em 1em;
+}
+
+.area_right .info_body .info_row .option_nav .nofloat {
+    float: none;
+    text-align: left;
+    border-top: 1px solid #fafafa;
+}
+
+.area_right .info_body .info_row .option_nav .img_icon img {
+    width: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.area_right .info_body .info_row .option_nav a {
+    display: inline-table;
+    color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.area_right .info_body .info_row .option_nav a:hover {
+    background-color: #fff;
+    color: #b0c080;
+}
+
+.area_right .info_body .info_row .option_nav ul {
+    padding: 1em;
+}
+
+.area_right .info_body .info_row .option_nav ul li {
+    display: table;
+    line-height: 200%;
+}
+
+.area_right .info_body .info_row .option_nav .col_left {
+    float: left;
+    width: 5em;
+    color: #ecf9c7;
+}
+
+.area_right .info_body .info_row .option_nav .col_tag {
+    color: #ecf9c7;
+}
+
+.area_right .info_body .info_row .option_nav .col_user {
+    float: left;
+    width: 6em;
+    text-align: left;
+    color: #59672f;
+}
+
+.area_right .info_body .info_row .option_nav .col_body {
+    float: left;
+    max-width: 22em;
+    text-align: left;
+    color: #59672f;
+}
+
+.area_right .info_body .info_row .option_nav .col_date{
+    float: left;
+    color: #59672f;
+    width: 6em;
+    text-align: left;
+}
+
+.area_right .info_body .info_row .option_nav .col_right {
+    float: left;
+    color: #59672f;
+}
+
+.area_right .info_body .info_row .option_nav .nolinks {
+    display: inline-table;
+    color: #fff;
+    padding: 0.5em;
+}
+
+.area_right .info_body .info_row .option_nav .info_num {
+    background-color: #fff;
+    color: #919e6a;
+    border: 1px solid #b0c080;
+    padding: 0.1em 0.5em;
+    border-radius: 0.8em;
+}
+
+/*数据行列表 结束*/
+
+/*对话框浮层 开始*/
+.area_right .info_dialog {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.area_right .info_dialog .dialog_background {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.area_right .info_dialog .dialog_frontpage {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.area_right .info_dialog .dialog_frontpage .form_window {
+    width: 50em;
+    min-height: 20em;
+    margin: 5em auto;
+    background-color: #eee;
+    border-radius: 0.5em;
+}
+
+.area_right .info_dialog .dialog_frontpage .form_window .form_title {
+    height: 3.5em;
+    background-color: #ddd;
+    border-radius: 1em 1em 0 0;
+}
+
+.area_right .info_dialog .dialog_frontpage .form_window .form_title .title_text
+{
+    float: left;
+    margin: 0.7em 1em;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #555;
+    display: inline-block;
+    margin: 0.7em 1em;
+}
+
+.area_right .info_dialog .dialog_frontpage .form_window .form_title .message_text
+{
+    float: right;
+    font-size: 1.3em;
+    color: #f33;
+    margin: 0.7em 1em;
+}
+/*对话框浮层 结束*/
+
+/*表单 开始*/
+.form_window .form_body {
+
+}
+
+.form_window .form_body .act_select{
+    font-size: 1.2em;
+    line-height: 300%;
+}
+
+.form_window .form_body ul {
+
+}
+
+.form_window .form_body ul li {
+    display: inline-block;
+    margin: 0.3em;
+}
+
+.form_window .form_body .col_left {
+    float: left;
+    margin: 0.5em 1em;
+    font-size: 1.3em;
+    min-width: 6em;
+    text-align: right;
+}
+
+.form_window .form_body .col_mid {
+    float: left;
+}
+
+.form_window .form_body .col_right {
+    float: left;
+}
+
+.form_window .form_body .select_list {
+    font-size: 1.3em;
+    height: 2em;
+}
+
+.form_window .form_body .text_name {
+    font-size: 1.3em;
+    width: 28em;
+    height: 2em;
+}
+
+.form_window .form_body .text_date{
+    font-size: 1.3em;
+    width: 10em;
+    height: 2em;
+} 
+
+.form_window .form_body .text_desc {
+    font-size: 1em;
+    line-height: 150%;
+    width: 36em;
+    height: 10em;
+}
+
+.form_window .form_body .col_button {
+    text-align: center;
+    height: 3em;
+    padding: 1em;
+}
+
+.form_window .form_body .col_button input {
+    font-size: 1.2em;
+    padding: 0.2em 1em;
+}
+/*表单 结束*/
+
+/*------------------------------*/
+/*主页面数据列表工作区 数据视图 End*/
+/*------------------------------------------------------------*/
+
+/*
+ * 附加样式，用于临时改变原有样式中的某些属性
+ */
+
+.default_hidden{
+    display: none;
+}
